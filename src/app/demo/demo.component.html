@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-md-8 mt-5 mb-5">
+    <app-product-list [productsInput]="products" (productEvent)="setSelected($event)"></app-product-list>
+  </div>
+
+  <div class="col-md-4 mt-5 mb-5" > 
+    <app-product-details [selectedProductInput]="selectedProduct" *ngIf="selectedProduct"></app-product-details>
+      </div>
+</div>

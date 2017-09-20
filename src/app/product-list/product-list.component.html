@@ -1,0 +1,19 @@
+<h3>Urunler</h3>
+
+    
+  <table class="table table-bordered small">
+    <tr *ngFor="let p of productsInput ; let i = index;">
+      <td>{{i+1}}</td>
+      <td>{{p.name}}</td>
+      <td>{{p.price}}</td>
+      <td>{{p.productCode}}</td>
+      <td>{{p.stock}}</td>
+      <td>
+
+        <button (click)="setSelected(p)" class="btn btn-sm btn-outline-success">Sec</button>
+        <button class="btn btn-sm btn-outline-warning" >Sil</button>
+        
+      </td>
+    </tr>
+
+  </table>
